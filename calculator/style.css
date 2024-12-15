@@ -1,0 +1,67 @@
+body {
+    background-color: black;
+}
+
+.body {
+    height: 42rem;
+    width: 28rem;
+    margin: auto;
+    margin-top: 30px;
+    background-color: gray;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.display {
+    height: 12rem;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    width: 28rem;
+    border-radius: 20px;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+}
+
+.display p {
+    margin-bottom: 20px;
+    margin-right: 10px;
+    font-size: 50px;
+}
+
+.keys-con {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.line {
+    display: flex;
+    flex-direction: column;
+    height: 27rem;
+    width: 4rem;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+.button {
+    height: 4rem;
+    width: 5rem;
+    border-radius: 40%;
+    border: none;
+    cursor: pointer;
+    transition: 0.1s ease-in-out 0.15s;
+}
+.button p {
+    font-size: 20px;
+}
+
+.button:hover {
+    background-color: rgb(120, 113, 113);
+}
+
+.inputs {
+    margin-bottom: 30px;
+    margin-right: 10px;
+    font-size: 50px;
+}
