@@ -1,13 +1,18 @@
 import React from 'react'
-import Navbar from './components/head.jsx'
-import Searchsection from './components/searchSec.jsx'
-import Recommend from './components/recommend.jsx'
-import Weather from './components/weather.jsx'
+import {Routes, Route} from 'react-router-dom'
+import Navbar from './components/Navbar.jsx'
+import Home from './pages/HomePage.jsx'
+import Info from './pages/Info.jsx'
+
 
 const App = () => {
   return (
     <div >
-      <Weather/>
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<Home />}/>
+        < Route path='/Info' element={<Info />}/>
+      </Routes>
     </div>
   )
 }
