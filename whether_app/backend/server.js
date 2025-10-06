@@ -46,6 +46,7 @@ app.get("/weather", async (req, res) => {
 
     const response = await axios.get(url, { params });
     res.json(response.data);
+    console.log(response.data);
   } catch (error) {
     console.error(error.response?.data || error.message);
     res.status(500).json({ error: "API request failed" });

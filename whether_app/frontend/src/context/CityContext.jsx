@@ -24,7 +24,7 @@ const CityContext = ({ children }) => {
 
   useEffect(() => {
     getWeather();
-  }, []);
+  }, [city]);
 
   return (
     <div>
